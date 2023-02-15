@@ -21,15 +21,19 @@
 
         a {
             background: var(--card-background);
+            background-color: var(--accent-color);
+
             box-shadow: var(--shadow-l1);
             border-radius: var(--tag-border-radius);
             padding: 8px 20px;
-            color: var(--card-text-color-main);
+            color: var(--accent-color-text);
             font-size: 1.4rem;
             transition: box-shadow 0.3s ease;
+            transition: background-color 0.5s ease;
 
             &:hover {
-                box-shadow: var(--shadow-l2);
+                color: var(--accent-color-text);
+                background-color: var(--accent-color-darker);
             }
         }
     }
