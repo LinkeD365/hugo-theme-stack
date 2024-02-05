@@ -50,6 +50,11 @@
                 </time>
             </div>
         {{ end }}
+
+        {{ range .Param "authors" }}
+        {{ partial "helper/icon" "user" }}
+		{{ . }}
+	{{ end }}
     </footer>
     {{ end }}
 
